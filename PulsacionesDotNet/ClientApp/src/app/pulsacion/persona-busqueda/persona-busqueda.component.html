@@ -1,0 +1,48 @@
+<div class="cuerpo">
+    <div class="container contenido">
+
+        <p class="tituloContainer"> BUSQUEDA DE PERSONAS</p>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <label class="control-label">Identificación:</label>
+                <input type="text" id="txtIdentificacion" form="busqueda" name="txtIdentificacion" [(ngModel)]="persona.identificacion" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <button form="busqueda" class="btn btn-secondary btn-block" (click)="buscar()"><mat-icon>search</mat-icon> Buscar Persona</button>
+            </div>
+            <div class="col-md-3">
+                <button type="reset" form="busqueda" class="btn btn-secondary btn-block"><mat-icon>delete_sweep</mat-icon> Limpiar Formulario</button>
+            </div>
+            <div class="col-md-6">
+                <form class="form" id="busqueda" style="padding-top: 10%;">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="control-label">Nombres:</label>
+                            <input type="text" readonly id="txtNombres" name="txtNombres" [(ngModel)]="persona.nombres" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Apellidos:</label>
+                            <input type="text" readonly id="txtApellidos" name="txtApellidos" [(ngModel)]="persona.apellidos" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Edad:</label>
+                            <input type="number" readonly id="txtEdad" name="txtEdad" [(ngModel)]="persona.edad" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Sexo:</label>
+                            <input type="text" readonly id="txtSexo" name="txtSexo" [(ngModel)]="persona.sexo" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="control-label">Pulsaciones:</label>
+                            <input type="number" readonly id="txtPulsaciones" name="txtPulsaciones" [(ngModel)]="persona.pulsaciones" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img class="logoBusqueda" src="../../../assets/BusquedaPersonas.png" alt="BusquedaPersonas">
+            </div>
+        </div>
+    </div>
+</div>
